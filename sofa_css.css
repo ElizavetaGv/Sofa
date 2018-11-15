@@ -1,0 +1,11 @@
+#room{
+ width:300px;
+ height:500px;
+ position:relative;
+ border: 1px solid #000;
+}
+#sofa{
+  left:30px;
+  top:30px;
+  position:absolute;
+}
