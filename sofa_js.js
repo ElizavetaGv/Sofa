@@ -14,7 +14,7 @@ document.getElementById('sofa').addEventListener('mousedown',onStart);
 document.getElementById('sofa').addEventListener('touchstart',onStart);
 
 function onStart(event){
-	if (event.touches!=underfined) {
+	if (event.touches!=undefined) {
 		startX=event.touches[0].pageX;
 		startY=event.touches[0].pageY;
 	} else {
@@ -29,7 +29,7 @@ function onStart(event){
 var maxX=document.getElementById('room').offsetWidth-200;
 var maxY=document.getElementById('room').offsetHeight-88;
 function onMove(event){
-	if (event.touches!=underfined) {
+	if (event.touches!=undefined) {
 		var deltaX=event.touches[0].pageX-startX;
 		var deltaY=event.touches[0].pageY-startY;
 	} else {
